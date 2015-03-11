@@ -1,0 +1,7 @@
+FROM gliderlabs/alpine:3.1
+MAINTAINER Rimusz <rmocius@gmail.com>
+
+# install basics
+RUN apk-install bash coreutils grep sed curl wget mc ca-certificates
+
+ENTRYPOINT ["/bin/bash"]
