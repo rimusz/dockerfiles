@@ -41,3 +41,4 @@ su ghost << EOF
 cd "$GHOST"
 NODE_ENV=${NODE_ENV:-production} npm start
 EOF
+
