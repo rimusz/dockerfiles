@@ -1,4 +1,4 @@
-FROM gliderlabs/alpine:3.1
+FROM alpine:latest
 MAINTAINER Rimusz <rmocius@gmail.com>
 
 # install basics
