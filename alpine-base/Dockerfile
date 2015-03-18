@@ -2,6 +2,6 @@ FROM alpine:latest
 MAINTAINER Rimusz <rmocius@gmail.com>
 
 # install basics
-RUN apk-install bash coreutils grep sed curl wget mc ca-certificates
+RUN apk add --update bash coreutils grep sed curl wget mc ca-certificates
 
 ENTRYPOINT ["/bin/bash"]

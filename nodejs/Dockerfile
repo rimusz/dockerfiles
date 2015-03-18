@@ -4,7 +4,7 @@ MAINTAINER Rimas Mocevicius rmocius@gmail.com
 ENV NPM_CONFIG_GLOBALCONFIG /etc/npmrc
 COPY npmrc /etc/npmrc
 
-RUN apk-install \
+RUN apk add --update \
     --virtual docker-nodejs \
     --no-progress \
     --force \
