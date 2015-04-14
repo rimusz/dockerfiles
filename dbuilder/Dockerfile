@@ -14,6 +14,7 @@ CMD ["/sbin/my_init"]
 
 ## ssh settings
 ADD ssh/config /root/.ssh/
+RUN chmod -R 600 /root/.ssh/
 ADD 00_host_keys.sh /etc/my_init.d/00_host_keys.sh
 RUN chmod 755 /etc/my_init.d/00_host_keys.sh
 
